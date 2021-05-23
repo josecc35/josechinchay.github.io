@@ -4,14 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <script src="funciones.js"></script>
+    <title>cachimbos 2021</title>
 </head>
 <body>
-    <form action="" method="POST">
-     <input name="nombre" type="text" placeholder="digite su nombre">
-     <input name="apellido" type="text" placeholder="digite su apellido">
-     <input name="edad" type="number" placeholder="digite su edad">
-    <button type="sumbit">ENVIAR DATOS</button>
-    </form>
+    <button onclick="mostrar">mostrar</button>
+    <br>
+<div id="bienvenido" style="border: 10em 2em #0000FF;">bienvenidos</div>
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dijit/themes/soria/soria.css">
+
+    <script>
+        dojoConfig = {
+            parseOnLoad: true
+        }
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
+    <!-- <script src='../_static/js/dojo/dojo.js'></script> -->
+
+    <script>
+        require(["dijit/Dialog", "dojo/domReady!"], function(Dialog) {
+            myDialog = new Dialog({
+                title: "Certus Bienvenido",
+                content: "La Información de esta Pantalla",
+                style: "width: 300px; height:300px"
+            });
+        });
+    </script>
+</head>
+
+<body class="soria">
+    <button onclick="myDialog.show();">CARGAR VENTANA</button>
+</body>
+
+</html>
+
 </body>
 </html>

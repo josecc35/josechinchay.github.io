@@ -14,7 +14,6 @@ h1, h2, h3, h4, h5, h6{
     font-family:'yanone kaffeesatz', sans-serif;
     letter-spacing: 1.5px;
 }
-
 /* estidolos del header*/
 .header {
     height: 60px;
@@ -24,6 +23,45 @@ h1, h2, h3, h4, h5, h6{
     justify-content: space-between;
 }
 .logo, .icon-menu {
+    margin: 5px;
+}
+
+.icon-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: black;
+    color: #fff;
+    text-align: center;
+    line-height:45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*----estilos de menu----*/
+.nav {
+    position: absolute;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link {
+    display: block;
+    padding: 20px;
+    background: #FBA919;
+    text-decoration: none;
+    color: #fff;
+}
+.menu__link:hover {
+background: white;
+color: #FBA919;
+}.logo, .icon-menu {
     margin: 5px;
 }
 

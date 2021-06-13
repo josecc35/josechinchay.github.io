@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCt5Mx-MVumu3IX83p34Yzk--lHeLq_nc8",
+    authDomain: "proyectocertus2021.firebaseapp.com",
+    projectId: "proyectocertus2021",
+    storageBucket: "proyectocertus2021.appspot.com",
+    messagingSenderId: "238752267091",
+    appId: "1:238752267091:web:3d023f5011fcccaa817fa6",
+    measurementId: "G-CW6B8DQS2K"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="index2.js"></script>
+
+</head>
+<body onload="javascript:cargarinicio"()">
+    <form action="" id="miformulario">
+        <label for="nombre">nombre</label>
+        <input type="text" id="nombre">
+        <br>
+        <label for="aplellidos">apellidos</label>
+        <input type="text" id="apellidos">
+        <br>
+        <label for="edad">edad</label>
+        <input type="number" id="edad">
+        <br>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

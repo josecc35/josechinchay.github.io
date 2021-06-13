@@ -1,0 +1,18 @@
+header {
+    height: 10px;
+}
+.contenedor{
+    height: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+h2{
+    color: lawngreen;
+}
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+
+}

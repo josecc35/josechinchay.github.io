@@ -9,20 +9,25 @@
 </head>
 <body>
     <script>
-        var dato = 10;
- 
-           switch(true){
-               case 3 < dato < 10:
-                   document.write("el valor es 1<br>");
-                   break;
-                case 10 < dato < 20:
-                    document.write("el valor es 2<br>");
-                    break;
-                    default:
-                        document.write("el valor no coincide con ninguno")
+    var producto = {
+         codigo:"A23F01",
+         nombre:"telivisor",
+         precio: 2499.99,
+         colores: ["negro" , "plata"],
+         calcularIgv: function(){
+             return this.precio*0.19;
 
-           }
-        
+         }
+     };
+     //escribe el valor de las propiedades del objeto
+     for (const propiedad in producto) {
+         if (producto.hasOwnProperty(propiedad)) {
+             const elemento = producto[propiedad];
+             document.write(elemento + "<br>");
+             
+         }
+          
+     }
     </script>
     
 </body>

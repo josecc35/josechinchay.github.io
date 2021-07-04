@@ -1,105 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Administrador de Tareas</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css", integridad: "sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HERCULES</title>
+  <link rel="stylesheet" href="proyectoGYM.css">
 </head>
+<body>
+  <div id="contenedor">
+    <div class="cabeza">
+        <img class="logo" src="../img/logo.png">
 
-<body ng-app="appTareas">
-    <div class="page-header">
-        <h1>HERCULES</h1>
-    </div>
-    
-     <ul class="nav nav-pills">
-        <li role="presentation" class="active"><a href="#">INICIO</a></li>
-        <li role="presentation"><a href="#">PLAN</a></li>
-        <li role="presentation"><a href="#">SEDES</a></li>
-        <li role="presentation"><a href="#">CLASES</a></li>
-        <li role="presentation"><a href="#">SHOP</a></li>
-      </ul>
-    <div class="container col-md-4 col-md-offset-4">
-        <form>
-            <h3>Agrega una nueva tarea</h3>
-            <div class="has-feedback">
-                <input type="text" class="form-control" placeholder="Tarea a realizar"></input>
-                <span class="glyphicon glyphicon-user form-control-feedback"></span>
-            </div>
-            <div>
-                <span class="class glyphicon glyphicon-pencil"></span>&nbsp;<span class="lead prioridad">Elige la prioridad</span>
-                <input type="text" placeholder="Prioridad"></input>
-            </div>
-            <button type="submit" class="btn btn-success">Agregar</button>
-            <button type="submit" class="btn btn-warning">Cerrado</button>
-        </form>
-    </div>   
-
-    <div class="wrapper">
-        <section class="headerUnidades bgImprensa">
-    <div class="breadcrumb"><a href="/"><img src="/packs/media/imgLocalHouse-4e0e3b47.png" alt="Imglocalhouse 4e0e3b47" /></a></div>
-
-  
-      <div class="flexsliderEspacoCli">
-        <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 1000%; -webkit-transition-duration: 0s; transition-duration: 0s; -webkit-transform: translate3d(-119px, 0px, 0px); transform: translate3d(-119px, 0px, 0px);">
-            <li class="clone" aria-hidden="true" style="width: 100px; float: left; display: block;">
-              <div class="grid-12">
-              <span class="imgCadatrais"></span>
-              Actualizar tus datos personales
-            </div>
-            </li>
-            <li class="flex-active-slide" style="width: 100px; float: left; display: block;">
-                <div class="grid-12">
-              <span class="imgCadatrais"></span>
-              Actualizar tus datos personales
-            </div>
-            </li>
-            <li style="width: 100px; float: left; display: block;">
-            <div class="grid-12">
-              <span class="imgCadatrais"></span>
-              Ver tus mensajes
-            </div>
-            </li>
-            </ul>
+        <div id="cabecera">
+            <h1>SEDES</h1>
         </div>
-      </div>
+
+        <div id="navegacion">
+            <div class="menu">
+                <a class="menu" href="../index.html">Inicio</a>
+                <a class="menu" href="../templates/sedes.html">Sedes</a>
+                <a class="menu" href="../templates/clases.html">Clases</a>
+                <a class="menu" href="../templates/planes.html">Planes </a>
+                
+                <div class="navicon">
+                    <input type="checkbox" id="toggle">
+                    <label for="toggle" class="button">☰</label>
+    
+                    <nav class="nav">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../templates/registro.html">Registro</a>
+                    <a href="#">Trabajo con nosotros</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
     </div>
 
+    <div class="centro">
+        
+        <div class="service">
+             <h6 style="color:white">BUSCAR POR: DIRECCION</h6>
+            <div class="busqueda">
+              <input type="search" id="search" placeholder="    Ingresa Tu Ciudad" />
+              <button class="btnsearch">Buscar</button>
+            </div>
+            
+            <div id="map">
+                <!--<script src="../js/sedes.js"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script> -->
+                <iframe id="mapita" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5087877263622!2d-76.98589678561743!3d-12.07728124575614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6497b4542b3%3A0x33cb850f50cb7e4a!2sGarcilazo%20de%20la%20Vega%20564-676%2C%20Cercado%20de%20Lima%2015022!5e0!3m2!1ses-419!2spe!4v1624579080355!5m2!1ses-419!2spe"></iframe>
+            </div>
+        
+        </div>
+    </div>
+    <div id="pie">
+        <div class="social">
+            <div class="icon"><a class="icon-facebook2" href="https://www.facebook.com/"></a></div>
+            <div class="icon"><a class="icon-instagram" href="https://www.instagram.com/?hl=es-la"></a></div>
+            <div class="icon"><a class="icon-whatsapp"; href="productos.html"></a></div>
+            <div class="icon"><a class="icon-twitter" href="https://twitter.com/87b y"></a></div>
+            <div class="icon"><a class="icon-linkedin" href="https://www.linkedin.com/"></a></div>
+        </div>
 
-    <footer>
-        <div class="wrapper">
-          <div class="grid-2" class="logo_margin">
-            <a href="#"><span class="logoFooter"></span></a>
-          </div>
-          <div class="linksFooter grid-7">
-      
-            <ul>
-              <li class="tlLinksFooter">SMART FIT<span class="setaFechadaFooter"></span></li>
-              <div class="fecharFTResp">
-                <li><a href="/acerca">Sobre</a></li>
-                <li><a href="/acerca">Instructores de Smart Fit</a></li>
-                <li><a href="/contratos">Documentos</a></li>
-              </div>
-            </ul>
-            <ul class="marRightUL">
-              <li class="tlLinksFooter">DUDAS FRECUENTES<span class="setaFechadaFooter"></span></li>
-              <div class="fecharFTResp">
-                  <li>
-                    <a href="/faq/82-no-soy-cliente">No Soy Cliente</a>
-                  </li>
-                  <li>
-                    <a href="/faq/83-soy-cliente">Soy Cliente</a>
-                  </li>
-              </div>
-            </ul>
-            <ul>
-              <li class="tlLinksFooter">CONTÁCTANOS<span class="setaFechadaFooter"></span></li>
-              <div class="fecharFTResp">
-                <li><a href="/faq">Hable con Nosotros</a></li>
-                <li>
-                </li>
-      
-      </footer>
+        <div class="pieresenas">
+            <a>¿Quienes somos?</a><br><br>
+            <a>Términos y condiciones</a>
+        </div>
+        <div class="pieresenas">
+            <a href="../templates/FaQ.html">FaQ</a><br><br>
+            <a>Derechos son reservados</a><br><br>
+            <a>Libro de reclamaciones</a>
+        </div>  
+    </div><br>
+</div>
+
 </body>
 </html>
-<!--  -->

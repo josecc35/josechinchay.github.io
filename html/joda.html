@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POLLERIA EL CHATO</title>
+    <title>DATOS PERSONALES</title>
 </head>
 <body>
-   <h1>POLLERIA EL CHATO</i></h1>
-   <P>DONDE TE ALIMENTAMOS BIEN</P>
-   <div class="centro">
-		
-    <div class="service">
-         <h6 style="color:white">BUSCAR POR: DIRECCION</h6>
-        <div class="busqueda">
-          <input type="search" id="search" placeholder="    Ingresa Tu Ciudad" />
-          <button class="btnsearch">Buscar</button>
-        </div><br>
-        <div id="map">
-            <script src="../js/sedes.js"></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmohK2nJnlNXIqceLZUp6Ft8CWKCWJjl4&callback=iniciarMap"></script>
-        </div>
+    <form action="#" target="" method="get" name="formDatosPersonales">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="ingrese tu nombre"/>
     
-    </div>
-</div>
-   
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="ingrese sus pellidos"/><br>
+    
+        <label for="email" />Email</label>
+        <input type="email" name="email" id="email" placeholder="ingrese su email" required />
+    
+        <label for="asunto">Edad</label>
+        <input type ="text" name="asunto" id="asunto" placeholder="ingrese su edad"/><br>
+    
+        <label for="direccion">Direccion</label>
+       
+        <input type="submit" name="enviar" value="ingrese su ciudad"/>
+    </form>
 </body>
 </html>
